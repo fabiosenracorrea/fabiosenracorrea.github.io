@@ -1,20 +1,33 @@
+:root {
+    --secundary-color: rgb(70, 136, 96);
+    --iced-grey: #f0f0f5;
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
 
 html {
     scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "Ubuntu";
 }
 
 h2 {
     margin: 16px 0 24px;
     font-size: 30px;
     line-height: 36px;
+    font-family: "Ubuntu";
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -28,7 +41,7 @@ body {
 /* here i will add header formats */
 
 .content header {
-    background-color: rgb(70, 136, 96);
+    background-color: var(--secundary-color);
 }
 
 header .header-content {
@@ -59,6 +72,13 @@ main {
     flex-direction: column;
 }
 
+main .page-content { 
+/* this was a setting on each # part, so it's better that we adjust as one class */
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto 24px;
+}
+
 /* home part with my image */
 
 main .home-bg{
@@ -69,8 +89,6 @@ main #home {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1300px;
-    width: 90%;
     margin: 48px auto;
 }
 
@@ -87,7 +105,7 @@ main #home .personal-greeting h1 {
 main #home .personal-greeting p {
     max-width: 540px;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: justify;
 }
 
@@ -99,14 +117,9 @@ main #home .personal-picture img{
 /* about me section */
 
 main .about-me-color {
-    background-color: #f0f0f5;
+    background-color: var(--iced-grey);
 }
 
-main #about-me {
-    max-width: 1300px;
-    width: 90%;
-    margin: 0 auto 24px;
-}
 
 /* projects section */
 
@@ -114,10 +127,17 @@ main .projects-color {
     background-color: white;
 }
 
-main #projects {
-    max-width: 1300px;
-    width: 90%;
-    margin: 0 auto 24px;
+
+main #projects .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main #projects p.click-instruction {
+    font-size: 11px;
+    color: grey;
+    font-weight: 700;
 }
 
 main #projects .cards {
@@ -130,7 +150,7 @@ main #projects .cards .card {
     display: flex;
     flex-direction: column;
     padding: 12px;
-    background-color: #f0f0f5;
+    background-color: var(--iced-grey);
     border-radius: 8px;
     align-items: center;
 }
@@ -150,13 +170,7 @@ main #projects .cards .card {
 /* contact info section */
 
 main .contact-info-color {
-    background-color: #f0f0f5;
-}
-
-main #contact-info {
-    max-width: 1300px;
-    width: 90%;
-    margin: 0 auto 24px;
+    background-color: var(--iced-grey);
 }
 
 main #contact-info p{
@@ -174,18 +188,15 @@ main #contact-info .social-media img {
     margin-right: 8px;
 }
 
-main #contact-info .social-media a {
-    color: black
-}
 
 main #contact-info .social-media a:hover {
-    color: rgb(70, 136, 96);
+    color: var(--secundary-color);
 }
 
 /* footer styling */
 
 footer {
-    background-color: rgb(70, 136, 96);
+    background-color: var(--secundary-color);
     height: 40px;
     display: flex;
 }
