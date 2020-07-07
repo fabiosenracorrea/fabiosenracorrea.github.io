@@ -1,0 +1,26 @@
+@media (max-width: 600px) {
+    /* first section */
+
+    main #home {
+        flex-direction: column;
+    }
+
+    main #home .personal-greeting h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    main #home .personal-greeting p {
+        font-size: 23px;
+    }
+
+    main #home .personal-picture {
+        order: -1;
+    }
+
+    /* projects section */
+
+    main #projects .cards {
+        grid-template-columns: 1fr;
+        
+    }
+}
