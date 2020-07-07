@@ -1,4 +1,24 @@
+
+@media (max-width: 300px) {
+    main #home .personal-picture img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 200px) {
+    main #home .personal-picture img {
+        width: 100px;
+    }
+}
+
 @media (max-width: 600px) {
+
+    /* header */
+
+    #page-home .content header .header-content a{
+        font-size: 19px;
+    }
+
     /* first section */
 
     main #home {
