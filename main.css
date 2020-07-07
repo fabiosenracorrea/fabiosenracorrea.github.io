@@ -91,7 +91,8 @@ main #home {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 48px auto;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 main #home .personal-greeting {
