@@ -82,7 +82,9 @@ main .page-content {
 /* home part with my image */
 
 main .home-bg{
-    background-color: rgb(86, 137, 233);
+    background: url(src/images/background.jpg) no-repeat;
+    background-position: 20% 60%;
+    background-size: cover;
 }
 
 main #home {
@@ -94,7 +96,7 @@ main #home {
 
 main #home .personal-greeting {
     margin-right: 20px;
-    /* color: white; */
+    color: white;
 }
 
 main #home .personal-greeting h1 {
@@ -105,8 +107,13 @@ main #home .personal-greeting h1 {
 main #home .personal-greeting p {
     max-width: 540px;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 8px;
+    padding: 8px 12px;
 }
 
 main #home .personal-picture img{
