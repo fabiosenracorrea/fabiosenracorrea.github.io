@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-    margin: 16px 0 24px;
+    margin: 24px 0 24px;
     font-size: 30px;
     line-height: 36px;
     font-family: "Ubuntu";
@@ -101,10 +101,11 @@ main #home .personal-greeting {
 }
 
 main #home .personal-greeting h1 {
-    margin-bottom: 36px;
+    margin-bottom: 64px;
     font-size: 90px;
     line-height: 90px;
 }
+
 main #home .personal-greeting p {
     max-width: 540px;
     font-size: 24px;
@@ -118,7 +119,7 @@ main #home .personal-greeting p {
 }
 
 main #home .personal-picture img{
-    width: 300px;
+    width: 400px;
     border-radius: 8px;
 }
 
@@ -126,6 +127,10 @@ main #home .personal-picture img{
 
 main .about-me-color {
     background-color: var(--iced-grey);
+}
+
+main #about-me p {
+    text-align: justify;
 }
 
 

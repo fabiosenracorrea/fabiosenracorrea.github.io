@@ -1,23 +1,15 @@
-
-@media (min-width:201px) and (max-width: 300px) {
-    main #home .personal-picture img {
-        width: 200px;
-    }
-}
-
-@media (max-width: 200px) {
-    main #home .personal-picture img {
-        width: 100px;
-    }
-}
-
 @media (max-width: 710px) {
 
     /* header */
 
+    header .header-content img {
+        margin-right: 12px;
+    }
+
     #page-home .content header .header-content a {
         font-size: 19px;
         text-align: center;
+        margin-right: 10px;
     }
 
     /* first section */
@@ -25,7 +17,7 @@
     main #home {
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 20px;
     }
 
@@ -41,6 +33,10 @@
     }
     main #home .personal-greeting p {
         font-size: 23px;
+    }
+
+    main #home .personal-picture img{
+        width: 300px;
     }
 
     main #home .personal-picture {
@@ -63,6 +59,19 @@
     }
 
 }
+
+@media (min-width:201px) and (max-width: 300px) {
+    main #home .personal-picture img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 200px) {
+    main #home .personal-picture img {
+        width: 100px;
+    }
+}
+
 
 @media (min-width:711px) and (max-width: 1037px) {
     main #home .personal-greeting {
