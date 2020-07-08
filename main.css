@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-    margin: 24px 0 24px;
+    margin: 24px 0;
     font-size: 30px;
     line-height: 36px;
     font-family: "Ubuntu";
@@ -145,6 +145,40 @@ main #projects .project-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+main #projects .project-header .tool-tip-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main #projects .project-header .tool-tip-container img {
+    width: 16px;
+    margin: 6px 0 0 6px;
+    cursor: pointer;
+}
+
+.tool-tip {
+    background-color: var(--secundary-color);
+    border-radius: 8px;
+    padding: 8px;
+    margin-left: 6px;
+    opacity: 0.92;
+    transition: 400ms ease;
+    position: absolute;
+    pointer-events: none;
+    left: 100%;
+    width: 220px;
+}
+
+.hide {
+    display: none;
+}
+
+.tool-tip p {
+    font-size: 12px;
+    color: white;
 }
 
 main #projects p.click-instruction {
