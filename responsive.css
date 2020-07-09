@@ -84,14 +84,23 @@
     }
 
     main #home .personal-greeting h1 {
-        font-size: 60px;
+        font-size: 75px;
         margin-bottom: 12px;
+        position: absolute;
+        top: 11%;
+        left: 18%;
 
     }
     main #home .personal-greeting p {
         font-size: 23px;
+        position: absolute;
+        top: 85%;
+        left: 15%;
     }
     main #home .personal-picture img {
         width: 300px;
+        position: absolute;
+        top: 27%;
+        left: 32%;
     }
 }
