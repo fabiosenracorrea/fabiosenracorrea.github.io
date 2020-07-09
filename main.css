@@ -30,6 +30,10 @@ a {
     color: black;
 }
 
+address {
+    font-style: normal;
+}
+
 body {
     --webkit-font-smoothing: antialiased;
 }
@@ -221,9 +225,11 @@ main #projects .cards .card {
 
 /* contact info section */
 
+
 main .contact-info-color {
     background-color: var(--iced-grey);
 }
+
 
 main #contact-info p{
     margin-bottom: 16px;
