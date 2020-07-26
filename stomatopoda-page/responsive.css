@@ -76,7 +76,7 @@
   }
 
   .facts .fact {
-    height: 55vh;
+    height: 50vh;
   }
 
   .fact:nth-child(2) img {
@@ -94,6 +94,10 @@
 
   nav a {
     margin-right: 0;
+  }
+
+  .facts .fact {
+    height: 55vh;
   }
 }
 
