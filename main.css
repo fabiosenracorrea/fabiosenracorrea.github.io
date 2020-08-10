@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -46,6 +47,7 @@ address {
 
 .content header {
   background-color: var(--secundary-color);
+  padding: 6px 0 6px 0;
 }
 
 header .header-content {
@@ -57,8 +59,7 @@ header .header-content {
 header .header-content img {
   width: 40px;
   height: 40px;
-  padding: 8px;
-  margin-right: 24px;
+  margin: 0 24px 0 10px;
 }
 
 header .header-content a {
@@ -215,7 +216,6 @@ main #projects .cards .card {
   height: 60px;
   margin: 8px 0;
 }
-
 
 .cards .card p {
   margin-top: 12px;
