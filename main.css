@@ -43,7 +43,7 @@ address {
   height: 100vh;
 }
 
-/* here i will add header formats */
+/* header */
 
 .content header {
   background-color: var(--secundary-color);
@@ -77,7 +77,7 @@ main {
   flex-direction: column;
 }
 
-main .page-content { 
+main .page-content {
 /* this was a setting on each # part, so it's better that we adjust as one class */
   max-width: 1300px;
   width: 90%;
@@ -86,7 +86,7 @@ main .page-content {
 
 /* home part with my image */
 
-main .home-bg{
+main .home-bg {
   background: url(src/images/background.jpg) no-repeat;
   background-position: 20% 60%;
   background-size: cover;
@@ -97,7 +97,7 @@ main #home {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main #home .personal-greeting {
