@@ -1,5 +1,5 @@
 :root {
-  --secundary-color: rgb(70, 136, 96);
+  --secundary-color: rgb(37, 131, 139);
   --iced-grey: #f0f0f5;
 }
 
@@ -141,7 +141,7 @@ main #about-me p {
 
 /* projects section */
 
-main .projects-color {
+main .projects-container {
   background-color: white;
 }
 
@@ -194,22 +194,23 @@ main #projects p.click-instruction {
 
 main #projects .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
 }
 
 main #projects .cards .card {
   display: flex;
   flex-direction: column;
-  padding: 12px;
-  background-color: var(--iced-grey);
-  border-radius: 8px;
   align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2.5px solid var(--secundary-color);
+  transition: background-color 0,2s;
 }
 
-.card:hover {
-  border: 1.5px solid var(--secundary-color);
-  transition: 100ms ease;
+main #projects .cards .card:hover {
+  background-color: var(--secundary-color);
+  color: white;
 }
 
 .cards .card a img {
