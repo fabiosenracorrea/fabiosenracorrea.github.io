@@ -198,7 +198,7 @@ main #projects p.click-instruction {
 
 main #projects .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -209,7 +209,7 @@ main #projects .cards .card {
   padding: 12px;
   border-radius: 8px;
   border: 2.5px solid var(--secundary-color);
-  transition: background-color 0,2s;
+  transition: background-color 0.2s;
 }
 
 main #projects .cards .card:hover {
@@ -218,7 +218,7 @@ main #projects .cards .card:hover {
 }
 
 .cards .card a img {
-  height: 60px;
+  max-height: 60px;
   margin: 8px 0;
 }
 
