@@ -143,6 +143,7 @@ main #about-me p {
 
 main .awards {
   margin: 30px 0 12px;
+  padding: 0 20px;
 }
 
 main .awards h4 {

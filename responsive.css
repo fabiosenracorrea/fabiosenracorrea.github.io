@@ -43,6 +43,12 @@
         order: -1;
     }
 
+    /* about me section */
+
+    main .awards .award-container span {
+      text-align: justify;
+    }
+
     /* projects section */
 
     .tool-tip {
@@ -63,6 +69,31 @@
         margin-bottom: 16px;
     }
 
+}
+
+@media (max-width: 400px) {
+
+  /* about me section */
+
+  main .awards img {
+    width: 65px;
+    margin: 0 0 16px 0;
+  }
+
+  main .awards li {
+    list-style: none;
+  }
+
+  main .awards .award-container {
+    flex-direction: column;
+    margin: 24px 0;
+  }
+
+  /* projects section */
+
+  .cards .card a img {
+    height: 40px;
+  }
 }
 
 @media (min-width:201px) and (max-width: 300px) {
