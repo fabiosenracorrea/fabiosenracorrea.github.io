@@ -85,6 +85,19 @@ function enableGitExplorerLogSwitchOnHoverBlur() {
   });
 }
 
+function enableCrabLogSwitchOnHoverBlur() {
+  const recipeCard = document.getElementById('crab-card');
+  const recipeImg = document.getElementById('crab-pic');
+
+  recipeCard.addEventListener('mouseover', () => {
+    recipeImg.src = 'src/images/crustaceo-white.png';
+  });
+
+  recipeCard.addEventListener('mouseout', () => {
+    recipeImg.src = 'src/images/crustaceo.png';
+  });
+}
+
 window.onload = () => {
   enableRecipeLogSwitchOnHoverBlur();
   enableProffyLogSwitchOnHoverBlur();
@@ -92,4 +105,5 @@ window.onload = () => {
   enableEcoletaLogSwitchOnHoverBlur();
   enableFinanceLogSwitchOnHoverBlur();
   enableGitExplorerLogSwitchOnHoverBlur();
+  enableCrabLogSwitchOnHoverBlur();
 }
