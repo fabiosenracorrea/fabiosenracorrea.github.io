@@ -1,5 +1,6 @@
 :root {
   --secundary-color: rgb(43, 170, 221);
+  --secundary-darker: rgb(89, 204, 250);
   --iced-grey: #f0f0f5;
 }
 
@@ -8,6 +9,10 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, img::selection, span::selection {
+  background-color: var(--secundary-color);
 }
 
 body {
@@ -157,6 +162,15 @@ main .awards img {
 
 main .awards a {
   color: var(--secundary-color);
+  transition: color 0.2s;
+}
+
+main .awards a:hover {
+  color: var(--secundary-darker);
+}
+
+main .awards a::selection {
+  color: white;
 }
 
 main .awards .award-container {
@@ -219,6 +233,10 @@ main #projects p.click-instruction {
   font-weight: 700;
 }
 
+main #projects p.click-instruction::selection {
+  color: white;
+}
+
 main #projects .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -258,7 +276,7 @@ main .contact-info-color {
 }
 
 
-main #contact-info p{
+main #contact-info p {
   margin-bottom: 16px;
 }
 
